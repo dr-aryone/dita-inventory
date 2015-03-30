@@ -15,7 +15,7 @@
     private PreparedStatement preparedStatement = null;
     private ResultSet result = null;
     
-    public void transactions(Model obj,Method t, Object...args) {
+    public void transactions(Model obj,Method t, Object...args) throws Exception {
         t.invoke(obj,args);
     }
     
