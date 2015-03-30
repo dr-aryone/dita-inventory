@@ -22,6 +22,9 @@
     }
     
     private void startConnection(){
+    	/*
+    	 * Setups and starts connection to the database
+    	 */
         try {
             Class.forName("com.mysql.jdbc.Driver");
             conn = DriverManager.getConnection(URL,USER,PASSWORD);
@@ -33,6 +36,9 @@
     }
     
     private void closeConnection(){
+    	/*
+    	 * Closes all active connections to the database
+    	 */
         try {
             if(result != null) {
                 result.close();
