@@ -16,7 +16,9 @@
     private ResultSet result = null;
     
     public void transactions(Model obj,Method t, Object...args) throws Exception {
+    	startConnection();
         t.invoke(obj,args);
+        closeConnection();
     }
     
     private void startConnection(){
