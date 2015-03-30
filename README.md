@@ -1,0 +1,2 @@
+# dita-inventory
+Java project
